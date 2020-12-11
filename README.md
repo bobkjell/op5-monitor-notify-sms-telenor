@@ -8,10 +8,10 @@ Send SMS notifications from OP5 Monitor using Telenor SMS API
 
 ## Configure OP5 Montor with Commands for host- and service-notifications
 host_notify_sms_telenor <br />
-$USER1$/custom/notify_sms_telenor.py -P $CONTACTPAGER$ -H $HOSTNAME$ -ho $HOSTOUTPUT$ -hs $HOSTSTATE$ -c "customerid" -u "username basic auth" -px "password xml" -pb "password basic auth" -f "fromsender"
+$USER1$/custom/notify_sms_telenor.py -P $CONTACTPAGER$ -H '$HOSTNAME$' -ho '$HOSTOUTPUT$' -hs $HOSTSTATE$ -c "customerid" -u "username basic auth" -px "password xml" -pb "password basic auth" -f "fromsender"
   
 service_notify_sms_telenor <br />
-$USER1$/custom/notify_sms_telenor.py -P $CONTACTPAGER$ -H $HOSTNAME$ -S $SERVICEDESC$ -so $SERVICEOUTPUT$ -ss $SERVICESTATE$ -c "customerid" -u "username basic auth" -px "password xml" -pb "password basic auth" -f "fromsender"
+$USER1$/custom/notify_sms_telenor.py -P $CONTACTPAGER$ -H '$HOSTNAME$' -S '$SERVICEDESC$' -so '$SERVICEOUTPUT$' -ss $SERVICESTATE$ -c "customerid" -u "username basic auth" -px "password xml" -pb "password basic auth" -f "fromsender"
 
 <br />
 
